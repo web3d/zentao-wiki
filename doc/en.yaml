@@ -1,0 +1,36 @@
+# the basic info.
+name:zentao extension helloworld!  # Extension name.
+code:wiki     # Extension code, must be letter or nubmer.
+type:extension       # Extension type, can be extension, patch or theme.
+copyright:QingDao Nature Easy Soft Network Technology Co.,LTD # Copyright info.
+site: http://www.zentao.net                                   # The official site.
+author:wwccss<wwccss@gmail.com>                               # The author, can be a list.
+abstract:The hello world example.
+
+# the desc and install doc. can be multi line, support html tags like a, p, div, h3-h6, strong, img, table, tr, td, ol, ul, li, span
+desc: |
+  This extension uses the hook shell to print 'helloworld' on top of the zentao.
+install: |
+  1. Install through the buildin extension manager.
+    1.1 Login to zentao system as administrator, visit the admin->extension
+    1.2 Go to the obtain page, search hellozentao.
+    1.3 Click the AutoInstall and begin the installation.
+  2. Manual install. Unzip this package and copy files under module directory to the zentao/module.
+
+# releases. 
+releases:              # Release versions.
+  1.1:                 # Version
+    zentaoversion:all  # Compatible zentao versions, can be a list like 2.2,2.3, all for all zentao versions.
+    charge:free        # Free or need buy? can be free, share, opensource or business.
+    date:2011-10-24    # Release date.
+    # the license and changelog, can be multi line, same as the desc and install field.
+    license: |
+      LGPL
+    changelog: |
+      change from ini to yaml
+  1.0:                
+    zentaoversion:all 
+    charge:free       
+    license:LGPL
+    changelog:First release.
+    date:2011-10-24   
